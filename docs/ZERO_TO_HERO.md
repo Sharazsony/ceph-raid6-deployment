@@ -16,7 +16,9 @@ We're going to build a **6-node Ceph cluster** on AWS with **RAID 6 erasure codi
 
 ## What We're Building
 
-![Ceph distributed storage cluster architecture showing monitor nodes, OSD nodes, and client connections](https://ceph.io/assets/bitmaps/Diagram_components.png)
+<img width="782" height="566" alt="image" src="https://github.com/user-attachments/assets/5a8f1df6-a982-48c1-9997-2ad4aef42754" />
+
+<img width="1065" height="572" alt="image" src="https://github.com/user-attachments/assets/325b6a66-4fcb-4947-8e31-e23d7a28ccdb" />
 
 *A production-grade Ceph cluster with Monitor, OSD, and monitoring nodes*
 
@@ -319,7 +321,8 @@ After 2–3 minutes you should see **5 OSDs** all showing `up in`.
 
 ### Configure RAID 6 Erasure Coding
 
-![RAID 6 data and parity chunk distribution across drives](https://www.prepressure.com/images/raid-level-6-read.svg)
+<img width="818" height="396" alt="image" src="https://github.com/user-attachments/assets/4f8ad539-a8ad-4d5b-a760-40b7e7aa39fa" />
+
 
 *RAID 6: 4 data chunks + 2 parity chunks = survives any 2 simultaneous failures*
 
