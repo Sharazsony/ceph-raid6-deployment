@@ -1,0 +1,124 @@
+# CODEOWNERS - GitHub Authorization & Access Control
+#
+# This file specifies who must review code changes.
+# GitHub automatically requests reviews from code owners.
+#
+# Syntax:
+# path/to/file @username
+# path/to/dir/ @username
+#
+
+# ============================================================
+# DEFAULT OWNERS
+# ============================================================
+
+# All files default to maintainer
+* @sharazsony
+
+# ============================================================
+# DOCUMENTATION
+# ============================================================
+
+# README must be reviewed by maintainer
+/README.md @sharazsony
+
+# All documentation changes require maintainer review
+/docs/ @sharazsony
+/docs/** @sharazsony
+
+# Contributing guidelines
+/CONTRIBUTING.md @sharazsony
+
+# ============================================================
+# CONFIGURATION & SETUP
+# ============================================================
+
+# Critical configuration files
+/.gitignore @sharazsony
+/LICENSE @sharazsony
+/.github/ @sharazsony
+/.github/CODEOWNERS @sharazsony
+
+# ============================================================
+# SCRIPTS
+# ============================================================
+
+# All automation scripts require review
+/scripts/ @sharazsony
+/scripts/** @sharazsony
+
+# ============================================================
+# CLOUD INFRASTRUCTURE
+# ============================================================
+
+# AWS resources must be reviewed
+/aws/ @sharazsony
+/aws/** @sharazsony
+
+# Terraform
+/aws/terraform/ @sharazsony
+/aws/terraform/** @sharazsony
+
+# CloudFormation
+/aws/cloudformation/ @sharazsony
+/aws/cloudformation/** @sharazsony
+
+# ============================================================
+# CONFIGURATION FILES
+# ============================================================
+
+# Ceph configuration
+/config/ @sharazsony
+/config/** @sharazsony
+
+# ============================================================
+# AUTHORIZATION RULES
+# ============================================================
+
+# ENFORCE: Only sharazsony can approve changes to:
+# - Documentation
+# - Scripts
+# - Configuration
+# - Infrastructure
+# - Repository settings
+
+# ============================================================
+# TEAM CONFIGURATION (if needed in future)
+# ============================================================
+
+# When adding teams:
+# @organization/team-name
+#
+# Example:
+# /docs/ @organization/maintainers
+# /scripts/ @organization/developers
+
+# ============================================================
+# NOTES
+# ============================================================
+
+# This file is used by GitHub to:
+# 1. Request reviews automatically
+# 2. Ensure code quality
+# 3. Prevent unauthorized changes
+# 4. Track who made what changes
+#
+# All changes to this file must be approved by @sharazsony
+
+# ============================================================
+# ENFORCEMENT RULES
+# ============================================================
+
+# Minimum requirements for merging:
+# 1. At least 1 approval from @sharazsony
+# 2. All automated checks passing
+# 3. No conflicts with main branch
+# 4. Commit history is clean
+# 5. No sensitive data in changes
+
+# ============================================================
+# CONTACT
+# ============================================================
+
+# Questions about code ownership?
+# Contact: sharaz.soni@university.edu
